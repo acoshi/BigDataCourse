@@ -10,7 +10,7 @@ DROP TABLE IF EXISTS media;
 CREATE TABLE media (
   id SERIAL PRIMARY KEY,
   name VARCHAR(255) NOT NULL COMMENT 'Нащвание мелиа файла',
-  description VARCHAR(255) NOT NULL COMMENT 'Описание файла', 
+  description VARCHAR(255) COMMENT 'Описание файла', 
   created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
   updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 ) COMMENT = 'Список медиа файлов';
