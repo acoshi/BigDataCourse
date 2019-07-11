@@ -37,3 +37,25 @@
 
         RENAME TABLE users_new TO users;
 
+3. В таблице складских запасов storehouses_products в поле value могут встречаться самые разные цыфры: 0, если товар закончился и выще нуля, если на складе имеются запасы.
+Необходимо отсортировать запасы таким образом, чтобы они выводились в порядке увеличения значения value. Однако, нулевые запасы должны выводится в конце, после всех записей.
+
+    Решение:
+
+    SELECT value FROM storehouses_products ORDER BY value=0, value;
+
+4. Из таблицы users необходимо извлечь пользователей, родившихся в августе и мае. Месяца заданы в виде списписка английских названий('may', 'august')
+
+    Решение:
+
+    SELECT * FROM users WHERE month LIKE 'may' OR month LIKE 'august';
+
+5. Из таблицы catalogs извлекаются записи при помощи запроса. SELECT * FROM catalogs WHERE id IN (5, 1, 2);
+Отсоптируйте записи в порядке, заданном в списке IN.
+
+    Решение:
+
+    SELECT * FROM catalogs WHERE id IN (5, 1, 2) ORDER BY FIELD(id, 5, 1, 2);
+
+
+
