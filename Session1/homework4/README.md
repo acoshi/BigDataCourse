@@ -15,4 +15,4 @@
 
     Решение:
 
-        В процессе решения
+        SELECT ROUND(EXP(SUM(LOG(id)))) FROM value;
