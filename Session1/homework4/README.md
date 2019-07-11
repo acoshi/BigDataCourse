@@ -9,7 +9,7 @@
 
     Решение:
 
-        ![alt text](https://raw.githubusercontent.com/acoshi/BigDataCourse/master/Session1/homework4/image1.png)
+        ![image](https://raw.githubusercontent.com/acoshi/BigDataCourse/master/Session1/homework4/image1.png)
 
 3. Подсчитать произведение чисел в слолбце таблицы.
 
