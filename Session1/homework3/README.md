@@ -1,8 +1,8 @@
 # Домашнее задание 3
 1. Пусть в таблице users поля created_at и updated_ad оказались незаполненными. Заполните их текущей датой и временем.
-
+    
     Решение:
-
+    
     UPDATE users SET created_at=NOW(), updated_at=NOW();
 
 
