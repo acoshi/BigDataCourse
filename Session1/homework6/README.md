@@ -9,7 +9,7 @@
     
     Решение:
 
-        SELECT p.name, p.desription, p.price, c.name FROM products AS p JOIN catalogs as c;
+        SELECT p.name, p.desription, p.price, c.name FROM products AS p JOIN catalogs as c WHERE p.catalog_id=c.id;
 
 3. Пусть имеется таблица рейсов flights (id, from, to) и таблица городов cities (label, name). 
    Поля from, to и label содержат английские названия городов, поле name — русское. 
