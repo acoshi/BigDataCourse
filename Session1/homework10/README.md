@@ -37,4 +37,4 @@
 
     Решение:
 
-        ![image](https://raw.githubusercontent.com/acoshi/BigDataCourse/master/Session1/homework10/image2.png)
+    ![image](https://raw.githubusercontent.com/acoshi/BigDataCourse/master/Session1/homework10/image2.png)
