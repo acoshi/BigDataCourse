@@ -60,6 +60,27 @@
 3. Определить кто больше поставил лайков (всего) - мужчины или женщины?
 
     Решение:
+        
+        SELECT 
+            COUNT(p1.sex) 
+        AS 
+            f_likes, COUNT(p2.sex)
+        AS 
+            m_likes 
+        FROM 
+            likes l 
+        LEFT JOIN 
+            profiles p1 
+        ON 
+            l.from_user_id = p1.user_id 
+        AND 
+            p1.sex='F' 
+        LEFT JOIN 
+            profiles p2 
+        ON 
+            l.from_user_id = p2.user_id 
+        AND 
+            p2.sex='M';
 
     Скажите могу ли я использовать в задании UNION
 
